@@ -1,0 +1,172 @@
+
+h1 {
+    color: red;
+    letter-spacing: 3px;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: gold;
+}
+p{
+    text-indent: 10%;
+}
+body{
+
+    font-style: oblique;
+    background: white url("css.jpg");
+    background-repeat: round;
+    background-position: center;
+    opacity: 50
+;
+}
+table{
+    border: 1px solid red;
+    background-color: gold;
+
+}
+.col1 {
+    background-color:  white;
+}
+
+.col2{
+    background-color: cyan;
+}
+
+thead{
+    background-color: hotpink;
+    font-family: "Bodoni MT";
+    text-transform: uppercase;
+}
+tbody{
+    font-style: italic;
+
+}
+ol {
+    list-style-type: upper-roman;
+}
+
+ol ol {
+    list-style-type: lower-roman;
+}
+
+ol ol ol {
+    list-style-type: lower-greek;
+}
+#photo1{
+    float: left;
+    width:250px;height:300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3%;
+}
+#photo2{
+    float: right;
+    width:250px;height:300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3%;
+}
+
+
+#tytul{
+
+    font-size: 30px;
+    background: hsla(48, 100%, 50%,0.7)   ;
+    width: 100%;
+    white-space: nowrap;
+    position: static;
+}
+
+#tresc{
+
+    height: 100%;
+    background: hsla(0, 100%, 80%,0.9);
+    margin-left: 250px;
+
+    position: relative;
+}
+@media  screen and (max-width: 800px) {
+    #menu{
+        position: fixed;
+        display: block;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        background: hsla(240, 20%, 80%,0.9);
+        border-color: black;
+        border-collapse: separate;
+        border-style: inset;
+        text-align: center;
+        width: 60px;
+        height: 25px;
+    }
+    #menu:hover +#spis_tresci{
+        left: 0px;
+        transition: 0.3s;
+    }
+
+
+    #spis_tresci {
+        transition: 0.3s;
+        width: 220px;
+        height: 100%;
+        left: -220px;
+        float: left;
+        text-align: center;
+        background: hsla(80, 90%, 40%, 0.7);
+        margin-right: 2%;
+        position: fixed;
+    }
+
+    #spis_tresci:hover {
+    left: 0px;
+    }
+    #spis_tresci:hover + #menu{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 801px){
+    #menu{
+        display: none;
+    }
+
+    #spis_tresci {
+        transition: right;
+        width: 220px;
+        height: 100%;
+        left: 0px;
+        float: left;
+        text-align: center;
+        background: hsla(80, 90%, 40%, 0.7);
+        margin-right: 2%;
+        position: fixed;
+    }
+}
+
+#spis_tresci ol li {
+    background: hsla(280, 100%, 90%,0.9);
+    border-color: red;
+    border-collapse: separate;
+    border-style: inset;
+    text-align: center;
+}
+#spis_tresci ol li:hover {
+    cursor: default;
+    color: red;
+}
+a:hover {
+    cursor: default;
+    color: red;
+}
+p:first-letter {
+    color: blue;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    font-size:large ;
+}
+
+
+

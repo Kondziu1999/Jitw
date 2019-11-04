@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+    <title>A Math Example</title>
+    <meta charset="UTF-8">
+      <link rel="stylesheet" href="../css/Style2.css" type="text/css" media="screen" title="Styl główny" />
+      <link rel="stylesheet" href="../css/Style1.css" type="text/css" media="print" title="print" />
+  </head>
+
+<body>
+    <div id="tytul"><h1>Strona 1</h1></div>
+    <div id="menu">menu</div>
+    <div id="spis_tresci">
+        <h1>menu</h1>
+    
+        <ol>
+            <li>
+                <a href="./index.html">menu</a>
+            </li>
+            <li>
+               <a href="./strona2.html">strona 2</a>
+            </li>
+            <li>
+                <a href="./strona3.html">strona 3</a>
+            </li>
+    
+        </ol>
+
+        <h2>Spis treści</h2>
+        <ol>
+            <li>
+                <a href="#adam">Adam Mickiewicz</a>
+            </li>
+            <li>
+                    <a href="#Controller">Spring Rest Controller</a>
+            </li>
+            <li>
+                    <a href="#prompt">Input</a>
+            </li>
+            <li>
+                    <a href="#odpowiedzi">odpowiedzi</a>
+            </li>
+
+        </ol>
+
+    </div>
+
+    <div id="tresc">
+        <h1 id="adam">Adam Bernard Mickiewicz</h1>
+
+        <p>
+                W latach 1807–1815 uczęszczał do dominikańskiej szkoły powiatowej w <i>Nowogródku</i>.
+                W 1812 miały miejsce dwa ważne wydarzenia w jego życiu: 16 maja umarł jego ojciec, 
+                a nieco później przez Nowogródek przeszły wojska Napoleona, maszerujące na Rosję.
+                Miasto Mickiewicza opanowała atmosfera radości i nadziei na koniec niewoli, 
+                jednak kilka miesięcy później ta sama Wielka <em>Armia napoleońska</em> wróciła rozbita i pokonana przez Rosjan.<br>
+                W 1815 Mickiewicz wyjechał do Wilna w celu podjęcia studiów.
+                Studiował nauki <b>humanistyczne</b> na <strong>Uniwersytecie Wileńskim</strong> –
+                czołowej uczelni dla ziem Rzeczypospolitej przejętych przez Imperium Rosyjskie. 
+                Studia podjął na Wydziale Nauk Fizycznych i Matematycznych, 
+                uczęszczając jednocześnie na wykłady Wydziału Nauk Moralnych i Politycznych oraz Literatury i Sztuk Wyzwolonych.
+                Trudna sytuacja materialna rodziny po śmierci ojca skłoniła go do&#160;podjęcia nauki w uniwersyteckim
+                    Seminarium Nauczycielskim, co gwarantowało później zatrudnienie w szkołach carskich.
+                Studia ukończył w 1819 ze stopniem magistra
+        </p>
+        <p>
+        <code id="Controller">
+                @RunWith(SpringRunner.class)<br>
+                @SpringBootTest<br>
+                @AutoConfigureMockMvc<br>
+                public class FooControllerAppIntegrationTest {<br>
+                
+                    @Autowired<br>
+                    private MockMvc mockMvc;<br>
+                
+                    @Test<br>
+                    public void whenTestApp_thenEmptyResponse() throws Exception {<br>
+                        this.mockMvc.perform(get("/foos")<br>
+                            .andExpect(status().isOk())<br>
+                            .andExpect(...);<br>
+                    }<br>
+                
+                }<br>
+        </code>
+        <samp id="prompt">  mike@interwebz:~$ md5 -s "Hello world"
+            MD5 ("Hello world") = 3e25960a79dbc69b674cd4ec67a72c62
+        </samp>
+        </p>
+        
+        <p>
+        H<sub>2</sub>O 
+        E = mc<sup>2</sup>
+        <br>
+        40 &gt; 30 <br>
+        10 &lt; 20 <br>
+        </p>
+
+        <h3 id="odpowiedzi">odpowiedzi na pytania:</h3>
+        
+        <ol>
+                        <li>Jaka jest różnica między znacznikami i oraz em? Czy zawsze dają identyczne wyniki?</li>
+                        <li>Jaka jest różnica między znacznikami b oraz strong? Czy zawsze dają identyczne wyniki?</li>
+                        <li>Jaka jest różnica między znacznikami code oraz samp? Czy zawsze dają identyczne wyniki?</li>
+                        <li>Jaka jest różnica pomiędzy fragmentem strony sformatowanej tak: 	&lt;p&gt;…	&lt;/p&gt;	&lt;p&gt;…	&lt;/p&gt; oraz fragmentem o następującej postaci: 	&lt;p&gt;…	&lt;br/&gt;&lt;br/&gt;…&lt;/p&gt;?
+        </ol>
+        
+    </div>
+
+</body>
+
+</html>
